@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mzc9/shroom_hunters/issues"
   },
-  "homepage": "https://github.com/mzc9/shroom_hunters#readme"
+  "homepage": "https://github.com/mzc9/shroom_hunters#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
