@@ -1,0 +1,19 @@
+{
+  "name": "shroom_hunters",
+  "version": "1.0.0",
+  "description": "fictional website of mushroom hunters",
+  "main": "shroomhunters.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzc9/shroom_hunters.git"
+  },
+  "author": "MZC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mzc9/shroom_hunters/issues"
+  },
+  "homepage": "https://github.com/mzc9/shroom_hunters#readme"
+}
