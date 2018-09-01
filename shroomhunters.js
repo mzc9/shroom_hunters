@@ -7,6 +7,19 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 
 
+//adding routes to home page and the about page without which Express server will throw 404 exception
+
+//app.get is the method to add routes
+app.get('/', function(req, res){
+	res.type('text/plain');
+	res.send('Shroom Hunters');
+});
+
+app.get('/about', function(req, res){
+	res.type('text/plain');
+	res.send('About Shroom Hunters');
+});
+
 // custom 404 page
 app.use(function(req, res){
 	res.type('text/plain');
