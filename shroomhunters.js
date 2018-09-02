@@ -1,5 +1,7 @@
 //Website's entry point
 
+//in terminal invoke node fileName.js
+
 var express = require('express');
 
 var app = express();
