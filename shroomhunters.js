@@ -24,8 +24,9 @@ app.set('port', process.env.PORT || 3000);
 //app.get is the method to add routes
 //takes two parameters: a path and a function
 app.get('/', function(req, res){
-	res.type('text/plain');
-	res.send('Shroom Hunters');
+	//res.type('text/plain');
+	res.render('home');
+	//res.send('Shroom Hunters');
 });
 
 app.get('/about', function(req, res){
