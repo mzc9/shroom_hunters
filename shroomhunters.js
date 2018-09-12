@@ -2,6 +2,7 @@
 
 //in terminal invoke node fileName.js
 
+var thought = require('./lib/thought.js');
 var express = require('express');
 
 var app = express();
@@ -17,7 +18,13 @@ app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
-
+//array of thoughts to be randomly delivered to client
+var thoughts = [
+	"Hyphae rule",
+	"You are only as good as your hyphal network",
+	"Practice makes permanent",
+	"Two roads diverged in the woods"
+];
 
 //adding routes to home page and the about page without which Express server will throw 404 exception
 
@@ -30,7 +37,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/about', function(req, res){
-	res.render('about');
+
+	//line below is removed since lib function created
+	//var randomThought = thoughts[Math.floor(Math.random() * thoughts.length)];
+	res.render('about', {thought:thought.getThought()});
+
 	/*res.type('text/plain');
 	res.send('About Shroom Hunters');*/
 });
